@@ -1,0 +1,1 @@
+select `karyawan`.`nip` AS `nip`,`karyawan`.`nama` AS `nama`,`karyawan`.`alamat` AS `alamat`,case when `karyawan`.`gend` = 'P' then 'Perempuan' when `karyawan`.`gend` = 'L' then 'Laki - laki' end AS `Gender`,date_format(`karyawan`.`tgl_lahir`,'%d %M %Y') AS `Tanggal Lahir` from `karyawan`
